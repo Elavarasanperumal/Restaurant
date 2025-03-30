@@ -6,6 +6,82 @@
     <title>Delicious Restaurant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.menu-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-image:hover {
+    transform: scale(1.05);
+}
+
+.menu-card {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .menu-card {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c0392b;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}</style>
 <body>
     <header>
         <h1>Welcome to Delicious Restaurant</h1>
